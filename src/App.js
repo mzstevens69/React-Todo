@@ -3,6 +3,8 @@ import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
 import NavBar from './components/NavBar';
 
+
+
 class App extends React.Component {
   // you will need a place to store your state in this component.
   constructor() {
@@ -56,7 +58,7 @@ class App extends React.Component {
     };
   render() {
     return (
-      <div>
+      <div className='todos' >
         <NavBar/>
         <TodoList
         handleToggleComplete={this.toggleTodoComplete}
